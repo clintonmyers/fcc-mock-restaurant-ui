@@ -3,6 +3,7 @@ import React from "react";
 import "./App.css";
 import { Header } from "./components/Header";
 import { useApiGet, TApiResponse } from "./hooks/useApiHook";
+import Home from "./Landing Page/Home";
 
 function App() {
   // call to the hook
@@ -15,9 +16,7 @@ function App() {
 
   return (
     <div className="App">
-      <p>Testing</p>
-
-      <Header />
+      <Home />
     </div>
   );
 }
