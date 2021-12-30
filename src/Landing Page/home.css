@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap");
+
+.home-container {
+  width: 100%;
+}
+
+.order-container {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "PT Sans Narrow", sans-serif;
+  color: #2f3e46;
+}
+
+#breakfast-font {
+  font-size: 30px;
+  text-shadow: 1.5px 1.5px #000;
+  color: #84a98c;
+}
+
+#homeBfast-img {
+  width: 100%;
+}
+
+#car-img {
+  width: 50%;
+  overflow: hidden;
+}
