@@ -22,7 +22,7 @@ const Home = () => {
           ></img>
           <p>
             <b>
-              <em>for delivery or pickup!</em>
+              <em>For Pickup Only!</em>
             </b>
           </p>
         </div>
