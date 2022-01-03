@@ -1,0 +1,44 @@
+.page-footer {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background: #84a98c;
+  color: white;
+  padding-top: 5px;
+  flex-direction: column;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding-top: 45px;
+}
+
+.twittericon {
+  color: white;
+  margin: 10px;
+}
+
+a {
+  color: white;
+}
+
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+a:focus {
+  text-decoration: none;
+  color: white;
+}
+a:hover,
+a:active {
+  text-decoration: none;
+  color: black;
+}
