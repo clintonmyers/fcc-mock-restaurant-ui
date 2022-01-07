@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { Footer } from "../components/Footer/Footer";
+import React from "react";
 import Style from "./home.css";
 
 const Home = () => {

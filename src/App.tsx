@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import { useApiGet, TApiResponse } from "./hooks/useApiHook";
-import Home from "./Landing Page/Home";
+import Home from "./Restaurants/Landing/Home";
 import Restaurants from "./Restaurants/Restaurants";
 import Menu from "./Restaurants/Menu/Menu";
 import Order from "./Restaurants/Order/Order";
