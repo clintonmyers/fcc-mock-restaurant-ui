@@ -27,3 +27,33 @@
   width: 50%;
   overflow: hidden;
 }
+
+#placeOrder {
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-family: "PT Sans Narrow", sans-serif;
+  border: 1.5px solid black;
+  background-color: white;
+  box-shadow: 1.5px 1.5px #000;
+  text-decoration: none;
+  padding: 10px;
+}
+
+#dividerTwo {
+  margin-top: 30px;
+  width: 100%;
+  height: 50vh;
+  background-image: linear-gradient(#2f3e46, #84a98c);
+}
+
+.bfastImg {
+  width: 100px;
+}
+
+.story-container {
+  margin: 0;
+  color: white;
+  box-shadow: 1.5px 1.5px #000;
+  display: block;
+  background-color: #84a98c;
+}
