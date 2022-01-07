@@ -1,7 +1,7 @@
 import "./Footer.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
-export const Footer = () => {
+const Footer = () => {
   return (
     <footer className="page-footer">
       <div className="icons">
@@ -26,3 +26,5 @@ export const Footer = () => {
     </footer>
   );
 };
+
+export default Footer;

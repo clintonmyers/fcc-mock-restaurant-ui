@@ -19,5 +19,9 @@
     "titleBar.inactiveForeground": "#e7e7e799"
   },
   "peacock.color": "dodgerblue",
-  "liveServer.settings.port": 5501
+  "liveServer.settings.port": 5501,
+  "prettier.configPath": "./.prettierrc",
+  "prettier.ignorePath": ".prettierignore.",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true
 }

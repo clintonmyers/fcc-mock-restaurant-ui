@@ -1,6 +1,5 @@
-import React, { useState } from "react";
-import { Footer } from "../components/Footer/Footer";
-import Style from "./home.css";
+import React from "react";
+import "./Landing.css";
 
 const Home = () => {
   return (
