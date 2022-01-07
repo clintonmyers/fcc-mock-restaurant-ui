@@ -1,13 +1,14 @@
 import React from "react";
-import "./Landing.css";
+import "./Landing.scss";
 import Slideshow from "./Slideshow";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div className="home-container">
+    <div className="landing-container">
       <div className="breakfastImg-container">
         <img
-          id="homeBfast-img"
+          id="landingBfast-img"
           src="https://media.istockphoto.com/photos/breakfast-with-bacon-eggs-pancakes-and-toast-picture-id533645537?k=20&m=533645537&s=612x612&w=0&h=KJXCpAo9XQvMI_djcnRMSsz_Y7OGS6z3-8VThxWyR0Q="
           alt="Breakfast Plate"
         />
@@ -26,9 +27,7 @@ const Home = () => {
             <em>For delivery or pickup!</em>
           </b>
         </p>
-        <a href="" target="_blank" id="placeOrder">
-          <b>Place your order</b>
-        </a>
+        <Link to="/order">Order</Link>
       </div>
       <div className="divider" id="dividerTwo"></div>
       <div className="slideshow-container">
