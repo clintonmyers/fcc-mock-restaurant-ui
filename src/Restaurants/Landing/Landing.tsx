@@ -2,6 +2,7 @@ import React from "react";
 import "./Landing.scss";
 import Slideshow from "./Slideshow";
 import { Link } from "react-router-dom";
+import Testimony from "./Testimony";
 
 const Home = () => {
   return (
@@ -30,16 +31,26 @@ const Home = () => {
         <Link to="/order">Order</Link>
       </div>
       <div className="divider" id="dividerTwo"></div>
-      <div className="slideshow-container">
+      <div className="bottom-container">
         <Slideshow />
-      </div>
-      <div className="story-container">
+
         <h1>Our food story</h1>
         <p>
-          Our breakfista's carefully craft a comfy collection of breakfast and
-          lunch delectibles that help melt all of your troubles away!
+          Our chef's carefully craft a comfy collection of breakfast and lunch
+          delectibles that help melt all of your troubles away!
         </p>
+
+        <div className="breakfastImg-container">
+          <img
+            id="landingBfast-img"
+            src="https://cdn.pixabay.com/photo/2020/01/29/04/48/food-4801581_960_720.jpg"
+            alt="brunch table"
+          />
+        </div>
       </div>
+      <>
+        <Testimony />
+      </>
     </div>
   );
 };
