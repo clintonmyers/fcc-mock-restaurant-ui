@@ -36,8 +36,8 @@ const Home = () => {
 
         <h1>Our food story</h1>
         <p>
-          Our chef's carefully craft a comfy collection of breakfast and lunch
-          delectibles that help melt all of your troubles away!
+          Our chef's carefully craft a comfy collection of culinary cakeries
+          that help melt all of your troubles away!
         </p>
 
         <div className="breakfastImg-container">
@@ -47,6 +47,7 @@ const Home = () => {
             alt="brunch table"
           />
         </div>
+        <p>Ask about our Tuesday Special!</p>
       </div>
       <>
         <Testimony />

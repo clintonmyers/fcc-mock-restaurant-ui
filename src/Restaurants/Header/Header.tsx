@@ -1,22 +1,23 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import "./Header.scss";
+import Navbar from "./Navbar";
 
 const Header = () => {
+  const [show, setShow] = useState(false);
+
   return (
-    <ul>
-      <li>
-        <Link to="/">Home</Link>
-      </li>
-      <li>
-        <Link to="/menu">Menu</Link>
-      </li>
-      <li>
-        <Link to="/order">Order</Link>
-      </li>
-      <li>
-        <Link to="/admin">Admin</Link>
-      </li>
-    </ul>
+    <>
+      <div className="header-container">
+        <div className="nav-container">
+          <button id="menuBtn" onClick={() => setShow(!show)}>
+            {" "}
+            <img src=".//FccBrunchLogo.png" alt="my image" id="logoBtn" />
+            {/* <i className="fa fa-bars" aria-hidden="true"></i> */}
+          </button>
+          {show ? <Navbar /> : null}
+        </div>
+      </div>
+    </>
   );
 };
 
