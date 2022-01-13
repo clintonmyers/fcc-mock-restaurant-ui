@@ -1,9 +1,9 @@
-import "./Footer.css";
+import "./Footer.scss";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 const Footer = () => {
   return (
-    <footer className="page-footer">
+    <footer className="restaurant-footer">
       <div className="icons">
         <div className="twittericon">
           <a
