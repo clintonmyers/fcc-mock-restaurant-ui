@@ -20,8 +20,17 @@ const Login = () => {
                     timer && clearInterval(timer);
                     return;
                 }
+                let currentUrl
 
-                const currentUrl = externalPopup.location.href;
+                try {
+                    currentUrl = externalPopup.location.href;
+
+                } catch (e) {
+                    // We have an exception it indicates that we have an access exception where the location isn't our
+                    // site
+                    currentUrl = ""
+                }
+
                 if (!currentUrl) {
                     return;
                 }
