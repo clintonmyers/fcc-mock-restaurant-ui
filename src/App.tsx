@@ -7,6 +7,7 @@ import Restaurants from "./Restaurants/Restaurants";
 import Menu from "./Restaurants/Menu/Menu";
 import Order from "./Restaurants/Order/Order";
 import Admin from "./Admin/Admin";
+import Login from "./Login/Login";
 
 function App() {
   // call to the hook
@@ -26,6 +27,7 @@ function App() {
           <Route path="/order" element={<Order />} />
         </Route>
         <Route path="/admin" element={<Admin />} />
+        <Route path="/login" element={<Login/>} />
       </Routes>
     </Router>
   );
