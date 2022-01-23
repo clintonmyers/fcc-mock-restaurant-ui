@@ -2,15 +2,13 @@ const MenuItems: MenuItems[] = [
   {
     category: "Drinks",
     price: 2,
-    stocked: true,
-    url: "https://res.cloudinary.com/dlsacnkot/image/upload/v1634070429/test.jpg",
+    url: "https://res.cloudinary.com/dlsacnkot/image/upload/v1642976846/coffee_vugltr.jpg",
     name: "Coffee",
     description: "A blend of coffee beans from La Bolsa in Colombia.",
   },
   {
     category: "Drinks",
     price: 2,
-    stocked: true,
     url: "https://res.cloudinary.com/dlsacnkot/image/upload/v1634070429/test.jpg",
     name: "OJ",
     description: "Cold pressed and freshely squeezed orange juice.",
@@ -18,7 +16,6 @@ const MenuItems: MenuItems[] = [
   {
     category: "Drinks",
     price: 2,
-    stocked: true,
     url: "https://res.cloudinary.com/dlsacnkot/image/upload/v1634070429/test.jpg",
     name: "Tea",
     description: "Cold pressed and freshely squeezed orange juice.",
@@ -26,7 +23,6 @@ const MenuItems: MenuItems[] = [
   {
     category: "Drinks",
     price: 2,
-    stocked: true,
     url: "https://res.cloudinary.com/dlsacnkot/image/upload/v1634070429/test.jpg",
     name: "Iced",
     description: "Choice of Earl Grey, GreenTea, Chamomile, or Peppermint.",
@@ -34,7 +30,6 @@ const MenuItems: MenuItems[] = [
   {
     category: "Drinks",
     price: 4,
-    stocked: true,
     url: "https://res.cloudinary.com/dlsacnkot/image/upload/v1634070429/test.jpg",
     name: "Latte",
     description: "2 shots of espresso served with steamed milk of choice.",
@@ -42,7 +37,6 @@ const MenuItems: MenuItems[] = [
   {
     category: "Eats",
     price: 14,
-    stocked: true,
     url: "https://res.cloudinary.com/dlsacnkot/image/upload/v1634070429/test.jpg",
     name: "FCC Classic",
     description:
@@ -51,7 +45,6 @@ const MenuItems: MenuItems[] = [
   {
     category: "Eats",
     price: 14,
-    stocked: true,
     url: "https://res.cloudinary.com/dlsacnkot/image/upload/v1634070429/test.jpg",
     name: "3 Egg Omelet",
     description:
@@ -60,7 +53,6 @@ const MenuItems: MenuItems[] = [
   {
     category: "Eats",
     price: 14,
-    stocked: true,
     url: "https://res.cloudinary.com/dlsacnkot/image/upload/v1634070429/test.jpg",
     name: "Corned Beef Hash",
     description:
@@ -69,7 +61,6 @@ const MenuItems: MenuItems[] = [
   {
     category: "Eats",
     price: 12,
-    stocked: true,
     url: "https://res.cloudinary.com/dlsacnkot/image/upload/v1634070429/test.jpg",
     name: "OMG French Toast!",
     description:
@@ -78,7 +69,6 @@ const MenuItems: MenuItems[] = [
   {
     category: "Eats",
     price: 9,
-    stocked: true,
     url: "https://res.cloudinary.com/dlsacnkot/image/upload/v1634070429/test.jpg",
     name: "Buttermilk Pancakes",
     description:
@@ -87,7 +77,6 @@ const MenuItems: MenuItems[] = [
   {
     category: "Eats",
     price: 12,
-    stocked: true,
     url: "https://res.cloudinary.com/dlsacnkot/image/upload/v1634070429/test.jpg",
     name: "FCC Ham Benedict",
     description:
@@ -96,7 +85,6 @@ const MenuItems: MenuItems[] = [
   {
     category: "Eats",
     price: 12,
-    stocked: true,
     url: "https://res.cloudinary.com/dlsacnkot/image/upload/v1634070429/test.jpg",
     name: "Avocado Benny",
     description:
@@ -105,7 +93,6 @@ const MenuItems: MenuItems[] = [
   {
     category: "Eats",
     price: 13,
-    stocked: true,
     url: "https://res.cloudinary.com/dlsacnkot/image/upload/v1634070429/test.jpg",
     name: "FCC Avocado Toast",
     description:
@@ -114,7 +101,6 @@ const MenuItems: MenuItems[] = [
   {
     category: "Eats",
     price: 12,
-    stocked: true,
     url: "https://res.cloudinary.com/dlsacnkot/image/upload/v1634070429/test.jpg",
     name: "Veggie Smash",
     description:
@@ -123,7 +109,6 @@ const MenuItems: MenuItems[] = [
   {
     category: "Eats",
     price: 13,
-    stocked: true,
     url: "https://res.cloudinary.com/dlsacnkot/image/upload/v1634070429/test.jpg",
     name: "Garden Omelet",
     description:
@@ -132,7 +117,6 @@ const MenuItems: MenuItems[] = [
   {
     category: "Eats",
     price: 12,
-    stocked: true,
     url: "https://res.cloudinary.com/dlsacnkot/image/upload/v1634070429/test.jpg",
     name: "Tofu Veggie Scramble",
     description:
@@ -143,7 +127,6 @@ export default MenuItems;
 interface MenuItems {
   category: string;
   price: number;
-  stocked: boolean;
   url: string;
   name: string;
   description: string;
