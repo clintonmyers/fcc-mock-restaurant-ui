@@ -4,6 +4,7 @@ import "./Menu.scss";
 import MenuHeader from "./MenuHeader";
 import Slider from "./Slider";
 import Drinks from "./Drinks";
+import Eats from "./Eats";
 import "./Drinks.scss";
 
 const Menu = () => {
@@ -36,16 +37,18 @@ const Menu = () => {
           </span>
         </div>
       </div>
-      <h2 className="drinks">Drinks</h2>
-
+      <h2>Drinks</h2>
       <div>
         {MenuItems.filter((item) => item.category === "Drinks").map((item) => {
           return <Drinks MenuItems={item} />;
         })}
       </div>
-      <div className="eats">Eats__</div>
-      <div className="imgdrink">Images of Drink</div>
-      <div className="imgeat">Images of Eat</div>
+      <h2>Eats</h2>
+      <div>
+        {MenuItems.filter((item) => item.category === "Eats").map((item) => {
+          return <Eats MenuItems={item} />;
+        })}
+      </div>
     </>
   );
 };
