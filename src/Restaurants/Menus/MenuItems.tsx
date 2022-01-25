@@ -1,4 +1,4 @@
-const MenuItems: MenuItems[] = [
+const MenuItems: MenuItem[] = [
   {
     category: "Drinks",
     price: 2,
@@ -124,7 +124,8 @@ const MenuItems: MenuItems[] = [
   },
 ];
 export default MenuItems;
-interface MenuItems {
+
+export interface MenuItem {
   category: string;
   price: number;
   url: string;

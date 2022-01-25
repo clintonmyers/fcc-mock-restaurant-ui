@@ -6,7 +6,6 @@ const DrinksEats = (props) => {
   return (
     <>
       <div className="drink-eat-container">
-        <img className="drink-eat-img" src={props.MenuItems.url}></img>
         <ul>
           <li>{props.MenuItems.name} </li>
           <li>${props.MenuItems.price} </li>
@@ -18,3 +17,5 @@ const DrinksEats = (props) => {
 };
 
 export default DrinksEats;
+
+// <img className="drink-eat-img" src={props.MenuItems.url}></img>
