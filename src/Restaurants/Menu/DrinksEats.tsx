@@ -2,11 +2,11 @@ import React from "react";
 import MenuItems from "./MenuItems";
 import "./Menu.scss";
 
-const Drinks = (props) => {
+const DrinksEats = (props) => {
   return (
     <>
-      <div className="drink-menu-container">
-        <img className="drink-img" src={props.MenuItems.url}></img>
+      <div className="drink-eat-container">
+        <img className="drink-eat-img" src={props.MenuItems.url}></img>
         <ul>
           <li>{props.MenuItems.name} </li>
           <li>${props.MenuItems.price} </li>
@@ -17,4 +17,4 @@ const Drinks = (props) => {
   );
 };
 
-export default Drinks;
+export default DrinksEats;

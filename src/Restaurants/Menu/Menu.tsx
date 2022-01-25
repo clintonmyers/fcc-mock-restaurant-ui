@@ -1,11 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import MenuItems from "./MenuItems";
 import "./Menu.scss";
 import MenuHeader from "./MenuHeader";
-import Slider from "./Slider";
-import Drinks from "./Drinks";
-import Eats from "./Eats";
-import "./Drinks.scss";
+import Slider from "./Slider/Slider";
+import DrinksEats from "./DrinksEats";
+import "./DrinksEats.scss";
 
 const Menu = () => {
   return (
@@ -39,16 +38,11 @@ const Menu = () => {
       </div>
       <h2>Drinks</h2>
       <div>
-        {MenuItems.filter((item) => item.category === "Drinks").map((item) => {
-          return <Drinks MenuItems={item} />;
+        {MenuItems.map((item) => {
+          return <DrinksEats MenuItems={item} />;
         })}
       </div>
       <h2>Eats</h2>
-      <div>
-        {MenuItems.filter((item) => item.category === "Eats").map((item) => {
-          return <Eats MenuItems={item} />;
-        })}
-      </div>
     </>
   );
 };
