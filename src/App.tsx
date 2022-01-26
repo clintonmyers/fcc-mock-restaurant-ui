@@ -1,9 +1,12 @@
-//import logo from "./logo.svg"; i dont think we need this?
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
-import { Header } from "./components/Header";
 import { useApiGet, TApiResponse } from "./hooks/useApiHook";
-import Home from "./Landing Page/Home";
+import Home from "./Restaurants/Landing/Landing";
+import Restaurants from "./Restaurants/Restaurants";
+import Menu from "./Restaurants/Menu/Menu";
+import Order from "./Restaurants/Order/Order";
+import Admin from "./Admin/Admin";
 
 function App() {
   // call to the hook
@@ -15,9 +18,16 @@ function App() {
   if (!data.loading) console.log(data);
 
   return (
-    <div className="App">
-      <Home />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Restaurants />}>
+          <Route index element={<Home />} />
+          <Route path="/menu" element={<Menu />} />
+          <Route path="/order" element={<Order />} />
+        </Route>
+        <Route path="/admin" element={<Admin />} />
+      </Routes>
+    </Router>
   );
 }
 
