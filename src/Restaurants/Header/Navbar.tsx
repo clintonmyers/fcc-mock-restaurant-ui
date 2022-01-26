@@ -5,8 +5,8 @@ import HamburgerMenu from "./HamburgerMenu";
 const Navbar = () => {
   return (
     <>
-      <ul className="nav-links">
-        <HamburgerMenu>
+      <HamburgerMenu>
+        <ul className="nav-links">
           <li>
             <Link to="/">Home</Link>
           </li>
@@ -19,8 +19,8 @@ const Navbar = () => {
           <li>
             <Link to="/admin">Admin</Link>
           </li>
-        </HamburgerMenu>
-      </ul>
+        </ul>
+      </HamburgerMenu>
     </>
   );
 };

@@ -12,6 +12,7 @@ const Testimony = () => {
         swipeable
         showThumbs={false}
         interval={7000}
+        showStatus={false}
       >
         <div className="myTestimony">
           <p>

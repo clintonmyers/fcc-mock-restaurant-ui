@@ -3,7 +3,7 @@ import { isDefined, applyIfTrue } from "./Helpers";
 
 const HamburgerMenu: React.FC = ({ children }) => {
   const [isOpen, setOpen] = React.useState(false);
-  const menuRef = React.useRef<HTMLDivElement>(null);
+  const menuRef = React.useRef<HTMLButtonElement>(null);
   const drawerRef = React.useRef<HTMLDivElement>(null);
 
   const clickOff = (clickedEl: HTMLElement) => {
@@ -43,8 +43,9 @@ const HamburgerMenu: React.FC = ({ children }) => {
 
   return (
     <>
-      <div
-        role="button"
+      <button
+        type="button"
+        aria-label="Open the menu"
         tabIndex={-1}
         onKeyDown={() => setOpen((prev) => !prev)}
         ref={menuRef}
@@ -54,10 +55,11 @@ const HamburgerMenu: React.FC = ({ children }) => {
         <div className="hamburger-line line1" />
         <div className="hamburger-line line2" />
         <div className="hamburger-line line3" />
-      </div>
+      </button>
 
       <div
         ref={drawerRef}
+        // aria-hidden={!isOpen}
         className={`hamburger-drawer ${applyIfTrue(
           isOpen,
           "hamburger-drawer-open"

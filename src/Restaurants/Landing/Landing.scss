@@ -1,15 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap");
 
+* {
+  // margin: 0;
+  // padding: 0;
+  // gap: 0;
+}
+
 .landing-container {
   width: 100%;
-  margin: 0;
   text-align: center;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.06fr 0.5fr 0.4fr 0.05fr 0.3fr 0.3fr 0.5fr 0.15fr 0.075fr;
-  grid-template-areas:
-    "header" "image1-container" "order-container" "divider"
-    "slideshow-container" "foodStory-container" "image2-container" "testimony-container" "tuesday-container";
 
   .container {
     width: 100%;
@@ -24,8 +23,10 @@
     background-color: #84a98c;
   }
   #image1-container {
-    // box-shadow: 1px 2px 100px 0px #2f3e46;
-    border-bottom: 1px solid #2f3e46;
+    // box-shadow: -7px 2px 7px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    padding: 0;
+    height: 400px;
   }
 
   #car-img {
@@ -51,9 +52,12 @@
 
   #foodStory-container {
     background-color: #84a98c;
-    color: white;
-    text-shadow: black 1.5px 1.5px;
-    // padding: 20px;
+    // color: white;
+    padding-top: 5px;
+  }
+
+  .foodText-container {
+    margin: 10px;
   }
 
   #testimony-container {
@@ -72,65 +76,69 @@
   #tuesday-container {
     background-color: #d36135;
   }
-  // #breakfast-font {
-  //   font-size: 30px;
-  //   text-shadow: 1.5px 1.5px #000;
-  //   color: #84a98c;
-  // }
+}
 
-  // .breakfastImg-container {
-  //   width: 100%;
-  // }
-  // #landingBfast-img {
-  //   width: 100%;
-  //   height: 200px;
-  //   object-fit: cover;
-  //   margin-top: 100px;
-  //   margin-bottom: 0px;
-  // }
+@media screen and (min-width: 700px) {
+  .landing-container {
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
 
-  // #car-img {
-  //   width: 50%;
-  //   overflow: hidden;
-  // }
+  #image1-container {
+    width: 20%;
+    flex-grow: 1;
+    order: 3;
+    object-fit: contain;
+  }
 
-  // #placeOrder {
-  //   margin: 0 auto;
-  //   text-transform: uppercase;
-  //   font-family: "PT Sans Narrow", sans-serif;
-  //   border: 1.5px solid black;
-  //   background-color: white;
-  //   box-shadow: 1.5px 1.5px #000;
-  //   text-decoration: none;
-  //   padding: 10px;
-  // }
+  #order-container {
+    width: 30%;
+    order: 1;
+    box-shadow: -7px 2px 7px rgba(0, 0, 0, 0.5);
+  }
 
-  // // #dividerTwo {
-  // //   margin-top: 30px;
-  // //   width: 100%;
-  // //   height: 50vh;
-  // //   background-image: linear-gradient(#2f3e46, #84a98c);
-  // // }
+  #slideshow-container {
+    width: 60%;
+    flex-grow: 1;
+    order: 2;
+    // box-shadow: -7px 2px 7px rgba(0, 0, 0, 0.5);
+  }
 
-  // .bfastImg {
-  //   width: 100px;
-  // }
+  #foodStory-container {
+    width: 40%;
+    order: 4;
+    p {
+      font-size: 20px;
+      padding-top: 50px;
+    }
+  }
 
-  // .bottom-container {
-  //   margin: 0;
-  //   color: white;
-  //   display: block;
-  //   background-color: #84a98c;
-  //   text-shadow: 1.5px 1.5px black;
-  // }
+  #image2-container {
+    width: 20%;
+    height: 400px;
+    flex-grow: 1;
+    object-fit: contain;
+    order: 6;
+  }
+  #testimony-container {
+    width: 20%;
+    order: 7;
+  }
 
-  // .testimony-container {
-  //   background-color: #2f3e46;
-  // }
-
-  // .myTestimony {
-  //   background-color: #2f3e46;
-  //   color: white;
-  //   padding: 10px;
-  // }
+  #tuesday-container {
+    width: 20%;
+    order: 5;
+    background-color: white;
+    // box-shadow: -7px 2px 7px rgba(0, 0, 0, 0.5);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "PT Sans Narrow", sans-serif;
+    padding-top: 50px;
+  }
+  #tuesday {
+    color: white;
+    text-shadow: #2f3e46 1.5px 1.5px;
+  }
 }

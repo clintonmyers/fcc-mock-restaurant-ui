@@ -42,12 +42,14 @@ const Home = () => {
       </div>
       <div className="container" id="foodStory-container">
         <h1>Our food story</h1>
-        <p>
-          Starting out as a small local shop in Dallas, our family owned and
-          operated restaurant has grown into a statewide favorite. Our chef's
-          carefully craft a comfy collection of culinary chow that help melt all
-          of your troubles away!
-        </p>
+        <div className="foodText-container">
+          <p>
+            Starting out as a small local shop in Dallas, our family owned and
+            operated restaurant has grown into a statewide favorite. Our chef's
+            carefully craft a comfy collection of culinary chow that help melt
+            all of your troubles away!
+          </p>
+        </div>
       </div>
       <div className="container" id="image2-container">
         <img
@@ -60,7 +62,10 @@ const Home = () => {
         <Testimony />
       </div>
       <div className="container" id="tuesday-container">
-        <p>Ask about our Tuesday Special!</p>
+        <p>
+          Ask about our <br />
+          <em id="tuesday">Tuesday Special!</em>
+        </p>
       </div>
     </div>
   );
