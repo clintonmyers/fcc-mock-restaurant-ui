@@ -1,0 +1,15 @@
+.items-container {
+  font-family: "PT Sans Narrow", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+}
+.item-container {
+  border: 1px #84a98c solid;
+  flex-grow: 2;
+  text-align: center;
+  width: 12.5rem;
+  padding: 20px;
+  img {
+    width: 150px;
+  }
+}

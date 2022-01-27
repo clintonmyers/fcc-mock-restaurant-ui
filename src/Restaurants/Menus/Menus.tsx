@@ -3,9 +3,10 @@ import MenuItems, { MenuItem } from "./MenuItems";
 import "./Menu.scss";
 import MenuHeader from "./MenuHeader";
 import Slider from "./Slider/Slider";
-import DrinksEats from "./DrinksEats";
-import "./DrinksEats.scss";
+import Item from "./Item";
+import "./Item.scss";
 import MenuSelector from "./MenuSelector";
+import Menu from "./Menu";
 
 //Pure function
 const generateCategories = (menuItems: MenuItem[]): string[] => {
@@ -23,18 +24,13 @@ const Menus = () => {
     <>
       <MenuHeader />
       <Slider />
-      <MenuSelector categories={categories} />
+      <h3>the category is {category || "not Set"} </h3>
 
-      <h2>Drinks</h2>
-      <div>
-        {MenuItems.map((item) => {
-          return <DrinksEats MenuItems={item} />;
-        })}
-      </div>
-      <h2>Eats</h2>
+      <MenuSelector categories={categories} setCategory={setCategory} />
+      <Menu />
+      <Item item={category} />
     </>
   );
 };
 
 export default Menus;
-//

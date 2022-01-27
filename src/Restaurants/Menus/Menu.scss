@@ -16,8 +16,7 @@
     font-size: 1.5rem;
   }
 
-  button:link,
-  a:visited {
+  button {
     color: #2f3e46;
     padding: 14px 25px;
     text-align: center;
@@ -25,8 +24,8 @@
     display: inline-block;
     font-family: "PT Sans Narrow", sans-serif;
   }
-  a:hover,
-  a:active {
+  button:hover,
+  button:active {
     background-color: #84a98c;
     color: white;
   }

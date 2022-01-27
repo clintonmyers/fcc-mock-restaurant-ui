@@ -4,12 +4,15 @@ import { getEnabledCategories } from "trace_events";
 const MenuSelector = (props) => {
   return (
     <>
-      <nav className="row-eats-drinks">
+      <nav className="row-menu-selector">
         <ul className="nav">
           {props.categories.map((category) => {
             return (
               <li className="nav-item">
-                <button type="button" className="nav-link menu-anchor">
+                <button
+                  onClick={() => props.setCategory(category)}
+                  type="button"
+                >
                   {category}
                 </button>
               </li>
