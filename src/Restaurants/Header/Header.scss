@@ -1,60 +1,118 @@
 .header-container {
+  width: 100%;
+  background-color: #84a98c;
   position: fixed;
   z-index: 1;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 75px;
-  width: 100%;
-  background-color: #2f3e46;
+  box-shadow: -7px 2px 7px rgba(0, 0, 0, 0.5);
 
-  #menuBtn {
-    position: fixed;
-    left: 0;
-    top: 20px;
-    border-radius: 12px;
-  }
-
-  #logoBtn {
+  #logoImg {
     width: 40px;
-    border-radius: 12px;
-  }
-  #mainLogo {
-    width: 75px;
-  }
-  .logo-container {
-    display: flex;
-    justify-content: center;
+    padding-top: 5px;
+    padding-left: 5px;
   }
 
   ul {
     list-style-type: none;
-    display: flex;
-    justify-content: center;
-  }
-
-  li a {
     text-decoration: none;
-    font-size: 18px;
-    padding: 9px 1px;
-    margin: 4px;
-    background-color: #2f3e46;
-    border: 2px solid white;
-    color: white;
-    border-radius: 12px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
   }
-  // possible other colors include #d36135 orangish & #fcf19d lighter yellowish
-  li: before {
-    color: green;
+  li a {
+    color: #2f3e46;
+    line-height: 100px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.5s ease;
   }
 
-  @media screen and (max-width: 780) {
-    ul,
-    li {
-      display: none;
+  #menuBtn {
+    transition: all 0.5s ease;
+  }
+
+  .hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    cursor: pointer;
+    padding: 8px;
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    z-index: 100;
+  }
+  .hamburger-drawer li a {
+    color: white;
+  }
+  .hamburger-line {
+    height: 2px;
+    width: 20px;
+    background-color: white;
+    transition: all 0.2s;
+  }
+  .hamburger-open .hamburger-line {
+    background-color: white;
+  }
+  .hamburger-open .line1 {
+    transform: rotate(45deg) translateX(7px);
+  }
+  .hamburger-open .line2 {
+    width: 0;
+  }
+  .hamburger-open .line3 {
+    transform: rotate(-45deg) translateX(7px);
+  }
+  .hamburger-white {
+    background-color: white;
+  }
+  .hamburger-drawer {
+    width: 320px;
+    max-width: 100%;
+    position: fixed;
+    top: 0;
+    right: -325px;
+    height: 100vh;
+    background-color: #2f3e46;
+    border-left: 1px solid #2f3e46;
+    color: white !important;
+    transition: all 0.2s;
+    padding: 1em;
+    box-sizing: border-box;
+  }
+  .hamburger-drawer-open {
+    right: 0;
+    box-shadow: -7px 2px 7px rgba(0, 0, 0, 0.5);
+  }
+
+  @media (min-width: 800px) {
+    .header-logo {
+      width: 250px;
+    }
+    .header-wrap {
+      padding: 1rem 2rem;
+    }
+    .hamburger-menu {
+      top: 16px;
     }
   }
+
+  // @media (min-width: 1050px) {
+  //   .hamburger-menu,
+  //   .hamburger-drawer {
+  //     // display: none;
+  //   }
+  //   .header-links {
+  //     flex-direction: row;
+  //     justify-content: space-between;
+  //     align-items: center;
+  //     gap: 1.5rem;
+  //     font-size: 16px;
+  //     padding: 0;
+  //     width: auto;
+  //   }
+
+  //   .white-links a {
+  //     color: white;
+  //   }
+  // }
 }
