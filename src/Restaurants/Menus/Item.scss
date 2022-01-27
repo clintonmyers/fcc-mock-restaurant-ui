@@ -2,14 +2,26 @@
   font-family: "PT Sans Narrow", sans-serif;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .item-container {
-  border: 1px #84a98c solid;
-  flex-grow: 2;
+  border: 1px #cbd9ce solid;
   text-align: center;
   width: 12.5rem;
-  padding: 20px;
+  padding: 0;
+  margin: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+
   img {
-    width: 150px;
+    width: 100%;
+  }
+
+  h3:first-of-type {
+    margin-top: 10px;
+  }
+
+  p {
+    margin: 10px;
   }
 }

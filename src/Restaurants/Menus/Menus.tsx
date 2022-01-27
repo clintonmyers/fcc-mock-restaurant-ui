@@ -27,7 +27,6 @@ const Menus = () => {
         categories={categories}
         setCategory={setCategory}
       />
-      <MenuJackSeparator />
       <div className="menus-container">
         {/* If a category is not selected, generate all menus,
         otherwise, only generate the menu of the selected category */}
