@@ -7,9 +7,12 @@ const Testimony = () => {
       <Carousel
         autoPlay
         infiniteLoop
+        showArrows={false}
+        showIndicators={false}
         swipeable
         showThumbs={false}
         interval={7000}
+        showStatus={false}
       >
         <div className="myTestimony">
           <p>
