@@ -4,7 +4,7 @@ import "./MenuHeader.scss";
 
 const MenuHeader = () => {
   return (
-    <div className="menu-container">
+    <div className="menu-header">
       <img src="https://res.cloudinary.com/dlsacnkot/image/upload/v1642219713/MENU_300_x_100_px_260_x_80_px_qhk0nb.png" />
     </div>
   );
