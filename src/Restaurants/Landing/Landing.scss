@@ -79,6 +79,10 @@
   #tuesday-container {
     background-color: #d36135;
   }
+
+  .myTestimony {
+    padding: 12px 5px;
+  }
 }
 
 @media screen and (min-width: 700px) {
@@ -87,64 +91,67 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-  }
 
-  #image1-container {
-    width: 20%;
-    flex-grow: 1;
-    order: 3;
-    object-fit: contain;
-  }
-
-  #order-container {
-    width: 30%;
-    order: 1;
-    box-shadow: -7px 2px 7px rgba(0, 0, 0, 0.5);
-  }
-
-  #slideshow-container {
-    width: 60%;
-    flex-grow: 1;
-    order: 2;
-    // box-shadow: -7px 2px 7px rgba(0, 0, 0, 0.5);
-  }
-
-  #foodStory-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40%;
-    order: 4;
-    p {
-      font-size: 20px;
-      padding-top: 50px;
+    #image1-container {
+      width: 20%;
+      flex-grow: 1;
+      order: 3;
+      object-fit: contain;
     }
-  }
 
-  #image2-container {
-    width: 20%;
-    height: 400px;
-    flex-grow: 1;
-    object-fit: contain;
-    order: 6;
-  }
-  #testimony-container {
-    width: 20%;
-    order: 7;
-  }
+    #order-container {
+      width: 30%;
+      order: 1;
+      box-shadow: -7px 2px 7px rgba(0, 0, 0, 0.5);
+    }
 
-  #tuesday-container {
-    width: 20%;
-    order: 5;
-    background-color: white;
-    // box-shadow: -7px 2px 7px rgba(0, 0, 0, 0.5);
-    font-size: 30px;
-    font-weight: bold;
-    font-family: "PT Sans Narrow", sans-serif;
-    padding-top: 50px;
-  }
-  #tuesday {
-    color: white;
-    text-shadow: #2f3e46 1.5px 1.5px;
+    #slideshow-container {
+      width: 60%;
+      flex-grow: 1;
+      order: 2;
+      // box-shadow: -7px 2px 7px rgba(0, 0, 0, 0.5);
+    }
+
+    #foodStory-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40%;
+      order: 4;
+      p {
+        font-size: 20px;
+        padding-top: 50px;
+      }
+    }
+
+    #image2-container {
+      width: 20%;
+      height: 400px;
+      flex-grow: 1;
+      object-fit: contain;
+      order: 6;
+    }
+    #testimony-container {
+      width: 20%;
+      order: 7;
+    }
+
+    #tuesday-container {
+      width: 20%;
+      order: 5;
+      // box-shadow: -7px 2px 7px rgba(0, 0, 0, 0.5);
+      font-size: 30px;
+      font-weight: bold;
+      font-family: "PT Sans Narrow", sans-serif;
+      padding-top: 50px;
+
+      p {
+        padding: 5px;
+      }
+    }
+    #tuesday {
+      color: white;
+      text-shadow: #2f3e46 1.5px 1.5px;
+    }
   }
 }
