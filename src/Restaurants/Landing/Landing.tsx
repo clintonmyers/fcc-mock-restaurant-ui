@@ -41,8 +41,8 @@ const Home = () => {
         <Slideshow />
       </div>
       <div className="sub-container" id="foodStory-container">
-        <h1>Our food story</h1>
         <div className="foodText-container">
+          <h1 className="italic">~ Our Food Story ~</h1>
           <p>
             Starting out as a small local shop in Dallas, our family owned and
             operated restaurant has grown into a statewide favorite. Our chef's
