@@ -22,7 +22,7 @@ const Footer = () => {
           <i className="bi bi-linkedin"></i>
         </a>
       </div>
-      <h4>ⓒ FCC Brunch 'N Code</h4>
+      <p>ⓒ FCC Brunch 'N Code</p>
     </footer>
   );
 };

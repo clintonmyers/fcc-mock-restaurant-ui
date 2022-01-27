@@ -8,14 +8,16 @@ const Header = () => {
   return (
     <>
       <div className="header-container">
-        <div className="nav-container">
+        <img src=".//FccBrunchLogo.png" alt="my image" id="logoImg" />
+
+        {/* <div className="nav-container">
           <button id="menuBtn" onClick={() => setShow(!show)}>
             {" "}
             <img src=".//FccBrunchLogo.png" alt="my image" id="logoBtn" />
-            {/* <i className="fa fa-bars" aria-hidden="true"></i> */}
           </button>
           {show ? <Navbar /> : null}
-        </div>
+        </div> */}
+        <Navbar />
       </div>
     </>
   );
