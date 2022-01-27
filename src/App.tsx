@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import "./App.css";
+import "./App.scss";
 import { useApiGet, TApiResponse } from "./hooks/useApiHook";
 import Home from "./Restaurants/Landing/Landing";
 import Restaurants from "./Restaurants/Restaurants";
@@ -27,7 +27,7 @@ function App() {
           <Route path="/order" element={<Order />} />
         </Route>
         <Route path="/admin" element={<Admin />} />
-        <Route path="/login" element={<Login/>} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </Router>
   );
