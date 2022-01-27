@@ -4,7 +4,7 @@ import "./App.css";
 import { useApiGet, TApiResponse } from "./hooks/useApiHook";
 import Home from "./Restaurants/Landing/Landing";
 import Restaurants from "./Restaurants/Restaurants";
-import Menu from "./Restaurants/Menu/Menu";
+import Menus from "./Restaurants/Menus/Menus";
 import Order from "./Restaurants/Order/Order";
 import Admin from "./Admin/Admin";
 
@@ -22,7 +22,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Restaurants />}>
           <Route index element={<Home />} />
-          <Route path="/menu" element={<Menu />} />
+          <Route path="/menu" element={<Menus />} />
           <Route path="/order" element={<Order />} />
         </Route>
         <Route path="/admin" element={<Admin />} />
