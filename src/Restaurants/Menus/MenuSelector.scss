@@ -18,11 +18,16 @@
 
   button {
     color: #2f3e46;
-    padding: 14px 25px;
+    padding: 15px 30px 15px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-family: "PT Sans Narrow", sans-serif;
+    border-radius: 3rem;
+    font-size: 2rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
   }
   button:hover,
   button.active {

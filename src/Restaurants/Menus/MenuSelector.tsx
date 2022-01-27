@@ -1,3 +1,5 @@
+import "./MenuSelector.scss";
+
 const MenuSelector = (props) => {
   return (
     <>

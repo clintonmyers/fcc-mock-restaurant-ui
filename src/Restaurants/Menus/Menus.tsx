@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import MenuItems, { MenuItem } from "./MenuItems";
-import "./Menu.scss";
 import MenuHeader from "./MenuHeader";
 import Slider from "./Slider/Slider";
 import MenuSelector from "./MenuSelector";
