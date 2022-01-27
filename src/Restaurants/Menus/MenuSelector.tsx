@@ -1,6 +1,3 @@
-import React, { useState } from "react";
-import { getEnabledCategories } from "trace_events";
-
 const MenuSelector = (props) => {
   return (
     <>
@@ -10,7 +7,18 @@ const MenuSelector = (props) => {
             return (
               <li className="nav-item">
                 <button
-                  onClick={() => props.setCategory(category)}
+                  onClick={() => {
+                    // Set category or reset on second click
+                    if (props.selectedCategory === category) {
+                      props.setCategory(null);
+                    } else {
+                      props.setCategory(category);
+                    }
+                  }}
+                  className={
+                    // Sets active class if category is currently selected
+                    props.selectedCategory === category ? "active" : ""
+                  }
                   type="button"
                 >
                   {category}
@@ -20,16 +28,6 @@ const MenuSelector = (props) => {
           })}
         </ul>
       </nav>
-      <div className="container jack-border">
-        <div className="jack-border">
-          <span>
-            <img
-              className="jack-image"
-              src="https://res.cloudinary.com/dlsacnkot/image/upload/v1642969484/Untitled_design_1_gamgru.png"
-            ></img>
-          </span>
-        </div>
-      </div>
     </>
   );
 };

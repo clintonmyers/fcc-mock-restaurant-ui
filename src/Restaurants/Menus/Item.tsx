@@ -1,26 +1,13 @@
-import React from "react";
-import MenuItems from "./MenuItems";
-import "./Menu.scss";
+import "./Item.scss";
 
 const Item = (props) => {
-  console.log(props);
   return (
-    <>
-      {/* Iterate to generate the items*/}
-      <div className="items-container">
-        {MenuItems.map(
-          (item, index) =>
-            props.item == item.category && (
-              <div className="item-container" key={index}>
-                <img src={item.url} alt="menu item" />
-                <h3>{item.name}</h3>
-                <h3>${item.price}</h3>
-                <p>{item.description}</p>
-              </div>
-            )
-        )}
-      </div>
-    </>
+    <div className="item-container" key={props.index}>
+      <img src={props.url} alt="menu item" />
+      <h3>{props.name}</h3>
+      <h3>${props.price}</h3>
+      <p>{props.description}</p>
+    </div>
   );
 };
 
