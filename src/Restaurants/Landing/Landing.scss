@@ -1,11 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap");
 
-* {
-  // margin: 0;
-  // padding: 0;
-  // gap: 0;
-}
-
 .landing-container {
   width: 100%;
   text-align: center;
@@ -34,8 +28,20 @@
   }
 
   #order-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
     z-index: -1;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: "PT Sans Narrow", sans-serif;
+    color: white;
+    text-shadow: #2f3e46 1.5px 1.5px;
+    background-color: #d36135;
   }
+
   #orderBtn {
     background-color: #2f3e46;
     color: white;
@@ -63,14 +69,6 @@
   #testimony-container {
     // background-color:
     font-weight: bold;
-  }
-  #order-container {
-    text-transform: uppercase;
-    font-weight: bold;
-    font-family: "PT Sans Narrow", sans-serif;
-    color: white;
-    text-shadow: #2f3e46 1.5px 1.5px;
-    background-color: #d36135;
   }
 
   #tuesday-container {
