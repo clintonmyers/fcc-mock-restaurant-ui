@@ -78,6 +78,13 @@
 
   #tuesday-container {
     background-color: #d36135;
+    padding: 6px;
+
+    #tuesday {
+      font-weight: 1000;
+      letter-spacing: 3px;
+      font-size: 28px;
+    }
   }
 
   .myTestimony {
@@ -147,11 +154,12 @@
 
       p {
         padding: 5px;
+
+        #tuesday {
+          color: white;
+          text-shadow: #2f3e46 1.5px 1.5px;
+        }
       }
-    }
-    #tuesday {
-      color: white;
-      text-shadow: #2f3e46 1.5px 1.5px;
     }
   }
 }
