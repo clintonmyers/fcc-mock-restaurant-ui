@@ -1,9 +1,7 @@
 import React from "react";
 import MenuItems from "./MenuItems";
-import "./Menu.scss";
 
 const Item = (props) => {
-  console.log(props);
   return (
     <>
       {/* Iterate to generate the items*/}

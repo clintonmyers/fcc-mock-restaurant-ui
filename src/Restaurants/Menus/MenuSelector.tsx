@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { getEnabledCategories } from "trace_events";
+import "./MenuSelector.scss";
 
 const MenuSelector = (props) => {
   return (

@@ -23,9 +23,15 @@
     text-decoration: none;
     display: inline-block;
     font-family: "PT Sans Narrow", sans-serif;
+    border-radius: 3rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s all;
   }
   button:hover,
-  button:active {
+  button:active,
+  button:visited {
     background-color: #84a98c;
     color: white;
   }

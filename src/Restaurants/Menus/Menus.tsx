@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import MenuItems, { MenuItem } from "./MenuItems";
-import "./Menu.scss";
 import MenuHeader from "./MenuHeader";
 import Slider from "./Slider/Slider";
 import Item from "./Item";
@@ -24,8 +23,6 @@ const Menus = () => {
     <>
       <MenuHeader />
       <Slider />
-      <h3>the category is {category || "not Set"} </h3>
-
       <MenuSelector categories={categories} setCategory={setCategory} />
       <Menu />
       <Item item={category} />
