@@ -87,6 +87,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 | Clint Myers                              |Jassmine Herrera                              | Scott Thompson                               |
 | -----------------------------------------|----------------------------------------------|----------------------------------------------|
-|                                          |                                              |sthompson082290@gmail.com
-| || [LinkedIn](https://www.linkedin.com/in/scott-thompson-600ba8b3) |
-|  |  | [GitHub](https://github.com/thompsons90)|
+|                                          |jassminfernandez@gmail.com                    |sthompson082290@gmail.com
+| |[LinkedIn](https://www.linkedin.com/in/jassmin-herr/)| [LinkedIn](https://www.linkedin.com/in/scott-thompson-600ba8b3) |
+|  | [GitHub](https://github.com/jassmin-herr09) | [GitHub](https://github.com/thompsons90)|
