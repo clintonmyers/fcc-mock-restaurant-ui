@@ -7,7 +7,7 @@ A mock restaurant UI with user authenticated ordering made by a FreeCodeCamp Dal
 Welcome to the Breakfast Club's <b>Mock Mobile Restaurant App!</b> 
 
 ## Build
-This front-end user interface features a hamburger menu, React-Router linked pages, and is carousel sliders to display images, menu items, and testimony's. Built with JavaScript - React, and TypeScript.
+This front-end user interface features a hamburger menu, React-Router linked pages, and carousel sliders to display images, menu items, and testimony's. Built with JavaScript - React, and TypeScript.
 
 ### Getting Started with Create React App
 
