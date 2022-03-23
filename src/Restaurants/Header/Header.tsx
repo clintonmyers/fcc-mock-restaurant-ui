@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Header.scss";
 import Navbar from "./Navbar";
+import fccLogo from "../../FccBrunchLogo.png";
 
 const Header = () => {
   const [show, setShow] = useState(false);
@@ -8,7 +9,7 @@ const Header = () => {
   return (
     <>
       <div className="header-container">
-        <img src=".//FccBrunchLogo.png" alt="my image" id="logoImg" />
+        <img src={fccLogo} alt="my image" id="logoImg" />
 
         {/* <div className="nav-container">
           <button id="menuBtn" onClick={() => setShow(!show)}>

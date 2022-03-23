@@ -11,15 +11,15 @@ import Login from "./Login/Login";
 
 function App() {
   // call to the hook
-  const data: TApiResponse = useApiGet(
-    "https://fcc-mock-restaurant-backend.herokuapp.com/api/testimonials"
-  );
+  // const data: TApiResponse = useApiGet(
+  //   "https://fcc-mock-restaurant-backend.herokuapp.com/api/testimonials"
+  // );
 
   // print the output
-  if (!data.loading) console.log(data);
+  // if (!data.loading) console.log(data);
 
   return (
-    <Router>
+    <Router basename="/fcc-mock-restaurant-ui">
       <Routes>
         <Route path="/" element={<Restaurants />}>
           <Route index element={<Home />} />
