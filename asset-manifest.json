@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/fcc-mock-restaurant-ui/static/css/main.dbe97b52.css",
+    "main.css": "/fcc-mock-restaurant-ui/static/css/main.2e962dd1.css",
     "main.js": "/fcc-mock-restaurant-ui/static/js/main.41300bc7.js",
     "static/media/bootstrap-icons.woff?": "/fcc-mock-restaurant-ui/static/media/bootstrap-icons.38c4d2499557ae0379fd.woff",
     "static/media/FccBrunchLogo.png": "/fcc-mock-restaurant-ui/static/media/FccBrunchLogo.72b968ec77a1f7219425.png",
@@ -9,11 +9,11 @@
     "static/media/Firstcarousel.jpg": "/fcc-mock-restaurant-ui/static/media/Firstcarousel.21052178b3a3e18d8253.jpg",
     "static/media/Secondcarousel.jpg": "/fcc-mock-restaurant-ui/static/media/Secondcarousel.6ad4e2d6dbe00af23aad.jpg",
     "index.html": "/fcc-mock-restaurant-ui/index.html",
-    "main.dbe97b52.css.map": "/fcc-mock-restaurant-ui/static/css/main.dbe97b52.css.map",
+    "main.2e962dd1.css.map": "/fcc-mock-restaurant-ui/static/css/main.2e962dd1.css.map",
     "main.41300bc7.js.map": "/fcc-mock-restaurant-ui/static/js/main.41300bc7.js.map"
   },
   "entrypoints": [
-    "static/css/main.dbe97b52.css",
+    "static/css/main.2e962dd1.css",
     "static/js/main.41300bc7.js"
   ]
 }
